@@ -1,0 +1,390 @@
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big,
+cite, code, del, dfn, em, font, img,
+ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+center, u, b, i {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     outline: 0;
+     font-weight: normal;
+     font-style: normal;
+     font-size: 100%;
+     font-family: inherit;
+     vertical-align: baseline
+}
+h1 { font-size: 2.2em }
+h2 { font-size: 1.8em }
+h3 { font-size: 1.4em }
+em { font-style: italic }
+strong { font-weight: bold }
+body {
+     line-height: 1
+}
+
+:focus {
+     outline: 0
+}
+
+ol, ul {
+     list-style: none
+}
+
+table {
+     border-collapse: collapse;
+     border-spacing: 0
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+     content: ""
+}
+
+blockquote, q {
+     quotes: "" ""
+}
+
+input, textarea {
+     margin: 0;
+     padding: 0
+}
+
+hr {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     color: #000;
+     background-color: #000;
+     height: 1px
+}
+/* end reset */
+
+/* fonts */
+/*
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * @vendor:     Matthew Welch
+ * @vendorurl:  http://www.squaregear.net/fonts/
+ * @licenseurl: http://www.fontsquirrel.com/license/College
+ *
+ *
+ */
+
+@font-face {
+	font-family: 'CollegeRegular';
+	src: url('fonts/COLLEGE.eot');
+	src: local('College Regular'), local('College'), url('fonts/COLLEGE.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'CollegeBold';
+	src: url('fonts/COLLEGEB.eot');
+	src: local('College Bold'), local('CollegeBold'), url('fonts/COLLEGEB.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'CollegeSemi-condensedRegular';
+	src: url('fonts/COLLEGES.eot');
+	src: local('College Semi-condensed Regular'), local('CollegeSemiCondensed'), url('fonts/COLLEGES.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'CollegeCondensedRegular';
+	src: url('fonts/COLLEGEC.eot');
+	src: local('College Condensed Regular'), local('CollegeCondensed'), url('fonts/COLLEGEC.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Citon';
+	src: url('fonts/citonl.eot');
+	src: local('CitonLightDB Normal'), local('CitonLightDBNormal'), url('fonts/citonl.ttf') format('truetype');
+}
+/* end fonts */
+body {
+	color: #000;
+	font: 16px 'Trebuchet MS',Trebuchet,Arial,Verdana,sans-serif;
+	background: #036;
+	background: -webkit-gradient(linear, left top, left bottom, from(#036), to(#000));
+	background: -moz-gradient(linear, left top, left bottom, from(#036), to(#000));
+	background-attachment: static;
+}
+a {
+	color: #000;
+	text-decoration: underline;
+}
+a:visited {
+	color: #222;
+}
+button {
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#DDD));
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+  border: 1px solid #999;
+  font-size: 15px;
+  height: 1.85em !important;
+  padding: 0px 8px;
+  color: buttontext;
+  cursor: default;
+  text-align: center;
+}
+button:active {
+  border-style: inset;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#DDD), to(white));
+}
+input[type=text], input[type=password], input[type=url], input[type=search],
+    textarea, select {
+  -webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-box-shadow: inset 2px 2px 3px #aaa;
+	-moz-box-shadow: inset 2px 2px 3px #aaa;
+	box-shadow: inset 0 1px 15px #000;
+  border: 1px solid #999;
+  font-size: 15px;
+  padding: 4px;
+}
+
+
+#page {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+#leftbanner {
+  position: absolute;
+  left: -20px;
+  top: 600px;
+}
+.card {
+	background-color: #fff;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	-webkit-box-shadow: 0 10px 25px #000;
+	-moz-box-shadow: 0 10px 25px #000;
+	box-shadow: 0 10px 15px #000;
+	width: 820px;
+	border: 1px solid #bbb;
+}
+#backcard {
+	position: absolute;
+	padding: 10px;
+	height: 1200px;
+	-webkit-transform-origin: right top;
+	-moz-transform-origin: right top;
+	z-index: 10;
+  left: 20px;
+  top: -30px;
+	-webkit-transform:rotate(-5deg);
+  -moz-transform:rotate(-5deg);
+}
+  /*#backcard:hover {
+  	left: -50px;
+  	top: -60px;
+	-webkit-transform:rotate(-10deg);
+	-moz-transform:rotate(-10deg);
+  }*/
+	#backcard div#ocho {
+		font: 256px Citon,Arial,Verdana,sans-serif;
+		line-height: 200px;
+		padding: 20px 0 0 10px;
+	}
+	#backcard div#logo {
+		font: 64px Citon,Arial,Verdana,sans-serif;
+		margin-left: 70px;
+		-webkit-transform-origin: left top;
+		-webkit-transform:rotate(90deg);
+		-moz-transform-origin: left top;
+		-moz-transform:rotate(90deg);
+	}
+		#backcard div#logo span {
+			letter-spacing: -8px;
+		}
+	
+#card {
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-left: 120px;
+	min-height: 1200px;
+	z-index: 20;
+}
+#as {
+  display: block;
+	font: 256px Citon,Arial,Verdana,sans-serif;
+	padding-left: 30px;
+	width: 160px;
+	height: 270px;
+	overflow: hidden;
+	float: left;
+	clear: left;
+	text-decoration: none;
+  margin-bottom: 40px;
+	margin-top: -30px;
+	color: #000;
+}
+#leftpanel {
+	float: left;
+	width: 200px;
+	margin-left: 10px;
+}
+	#leftpanel .box {
+		margin-bottom: 40px;
+		clear: left; /* mozilla bug */
+	}
+		#leftpanel .box.submit_go button {
+			display: block;
+			width: 100%;
+			padding: 0;
+		}
+		#leftpanel .box.search {
+			text-align: center;
+		}
+  		#leftpanel .box.search input {
+  			width: 150px;
+  		}
+  		#leftpanel .box.search button {
+  		}
+#menu {
+	padding-top: 10px;
+	z-index: 4;
+}
+	#menu a {
+		border: 2px solid #666;
+		text-decoration: none;
+		margin-right: 5px;
+		padding: 0 4px;
+		background-color: #fff;
+		-webkit-border-top-left-radius: 5px;
+		-webkit-border-top-right-radius: 5px;
+		-moz-border-radius-topleft: 5px;
+		-moz-border-radius-topright: 5px;
+	}
+	#menu a:hover {
+		background: #666;
+		color: #fff;
+	}
+	#menu a.active {
+		border-bottom-color: #fff;
+	}
+	#menu a.active:hover {
+		border-bottom-color: #666;
+	}
+#view {
+	margin-left: 220px;
+	margin-right: 10px;
+	padding-top: 10px;
+	-webkit-border-top-right-radius: 30px;
+	-moz-border-radius-topright: 30px;
+	border-top-right-radius: 30px;
+}
+  #view .ad.w468 {
+    /*width: 468px;*/
+    text-align: center;
+    margin: 0 auto 10px auto;
+  }
+#footer {
+  color: #aaa;
+  text-align: center;
+  margin: 50px 0;
+  font: 27px Citon,Arial,Verdana,sans-serif;
+  letter-spacing: 2px;
+  text-shadow: 1px 0 5px #666;
+}
+
+.submit {
+	padding: 10px;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ddd), to(#fff));
+	-webkit-border-top-left-radius: 15px;
+	-webkit-border-top-right-radius: 15px;
+	-moz-border-radius-topleft: 15px;
+	-moz-border-radius-topright: 15px;
+}
+	.submit fieldset {
+		margin-bottom: 10px;
+		vertical-align: bottom;
+	}
+	.submit label {
+		display: block;
+		height: 30px;
+		line-height: 35px;
+		font-weight: bold;
+	}
+		.submit label input {
+			float: right;
+			width: 450px;
+		}
+		.submit > button {
+			display: block;
+			margin-left: auto;
+		}
+
+.links {
+  border: 1px solid #ddd;
+  -webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+  .links h3:first-child, .links h3:last-child {
+    -webkit-border-top-left-radius: 20px;
+  	-webkit-border-top-right-radius: 20px;
+  	-moz-border-radius-topleft: 20px;
+  	-moz-border-radius-topright: 20px;
+  }
+  .links h3 {
+    padding: 5px 10px 5px 30px;
+    position: relative;
+  }
+  .links h3:nth-child(odd) {
+    background: #eee;
+    /*background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ddd), to(#fff));*/
+  }
+    .links h3 a {
+      text-decoration: none;
+      color: #036;
+    }
+    .links h3 .submitter {
+      font-size: 0.5em;
+    } 
+  .links a.vote {
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 2px;
+    left: 6px;
+  }
+    .links a.vote.up {
+      top: 5px;
+    }
+    .links a.vote.down {
+      top: 30px;
+    }
+    .links a.vote:hover {
+      font-weight: bold;
+    }
+      .links a.vote.up:hover {
+        color: #063;
+      }
+      .links a.vote.down:hover {
+        color: #600;
+      }
+    .links a.vote .arrow {
+      font-size: 0px;
+      line-height: 0%;
+      width: 0px;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+    }
+    .links a.vote .arrow.up {
+      border-bottom: 8px solid #063;
+    }
+    .links a.vote .arrow.down {
+      border-top: 8px solid #600;
+    }

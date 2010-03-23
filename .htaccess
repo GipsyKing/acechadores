@@ -1,0 +1,16 @@
+ErrorDocument 404 /error.html
+
+AddType x-mapp-php5 .php
+
+<IfModule mod_deflate.c>
+<FilesMatch "\.(js|css)$">
+  SetOutputFilter DEFLATE
+</FilesMatch>
+</IfModule>
+ 
+<IfModule mod_rewrite.c>
+Options +FollowSymLinks
+RewriteEngine on
+
+RewriteRule ^submit(.*)$ /index.php?submit [QSA]
+</IfModule>
